@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kylekwon/Documents/intern/quantcast_coding_challenge/include/Parser.h
+iostream
+-
+
+/Users/kylekwon/Documents/intern/quantcast_coding_challenge/src/Parser.cpp
+../include/Parser.h
+/Users/kylekwon/Documents/intern/quantcast_coding_challenge/include/Parser.h
+
+/Users/kylekwon/Documents/intern/quantcast_coding_challenge/src/main.cpp
+iostream
+-
+../include/Parser.h
+/Users/kylekwon/Documents/intern/quantcast_coding_challenge/include/Parser.h
+
