@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/kylekwon/Documents/intern/quantcast_coding_challenge/./include 
+CXX_INCLUDES = 
 

@@ -1,23 +1,17 @@
 #include <iostream>
-#include <fstream>
-#include <sstream>
 #include "util/Parser.h"
+#include "model/Cookie.h"
 
 int main(int argc, char **argv) {
     if (argc != 4) {
         std::cout << "Invalid command" << std::endl;
     }
-    Parser p(argc, argv);
-    p.print();
+    Parser p;
     std::string file(argv[1]);
-    std::fstream myFile(file);
-    std::string s, word;
-    while (getline(myFile, s)) {
-        std::stringstream str(s);
-        while(getline(str, word, ',')) {
-            std::cout << word << std::endl;
-        }
-
+    std::vector<Cookie> cookies = p.parseFile(file);
+    for (auto i = cookies.begin(); i != cookies.end(); i++) {
+        (*i).print();
     }
+
     return 0;
 }

@@ -170,6 +170,114 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/Cookie.o: model/Cookie.cpp.o
+
+.PHONY : model/Cookie.o
+
+# target to build an object file
+model/Cookie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o
+.PHONY : model/Cookie.cpp.o
+
+model/Cookie.i: model/Cookie.cpp.i
+
+.PHONY : model/Cookie.i
+
+# target to preprocess a source file
+model/Cookie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.i
+.PHONY : model/Cookie.cpp.i
+
+model/Cookie.s: model/Cookie.cpp.s
+
+.PHONY : model/Cookie.s
+
+# target to generate assembly for a file
+model/Cookie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s
+.PHONY : model/Cookie.cpp.s
+
+model/Date.o: model/Date.cpp.o
+
+.PHONY : model/Date.o
+
+# target to build an object file
+model/Date.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o
+.PHONY : model/Date.cpp.o
+
+model/Date.i: model/Date.cpp.i
+
+.PHONY : model/Date.i
+
+# target to preprocess a source file
+model/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.i
+.PHONY : model/Date.cpp.i
+
+model/Date.s: model/Date.cpp.s
+
+.PHONY : model/Date.s
+
+# target to generate assembly for a file
+model/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.s
+.PHONY : model/Date.cpp.s
+
+model/Time.o: model/Time.cpp.o
+
+.PHONY : model/Time.o
+
+# target to build an object file
+model/Time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o
+.PHONY : model/Time.cpp.o
+
+model/Time.i: model/Time.cpp.i
+
+.PHONY : model/Time.i
+
+# target to preprocess a source file
+model/Time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.i
+.PHONY : model/Time.cpp.i
+
+model/Time.s: model/Time.cpp.s
+
+.PHONY : model/Time.s
+
+# target to generate assembly for a file
+model/Time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.s
+.PHONY : model/Time.cpp.s
+
+model/TimeStamp.o: model/TimeStamp.cpp.o
+
+.PHONY : model/TimeStamp.o
+
+# target to build an object file
+model/TimeStamp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o
+.PHONY : model/TimeStamp.cpp.o
+
+model/TimeStamp.i: model/TimeStamp.cpp.i
+
+.PHONY : model/TimeStamp.i
+
+# target to preprocess a source file
+model/TimeStamp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.i
+.PHONY : model/TimeStamp.cpp.i
+
+model/TimeStamp.s: model/TimeStamp.cpp.s
+
+.PHONY : model/TimeStamp.s
+
+# target to generate assembly for a file
+model/TimeStamp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.s
+.PHONY : model/TimeStamp.cpp.s
+
 util/Parser.o: util/Parser.cpp.o
 
 .PHONY : util/Parser.o
@@ -209,6 +317,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/Cookie.o"
+	@echo "... model/Cookie.i"
+	@echo "... model/Cookie.s"
+	@echo "... model/Date.o"
+	@echo "... model/Date.i"
+	@echo "... model/Date.s"
+	@echo "... model/Time.o"
+	@echo "... model/Time.i"
+	@echo "... model/Time.s"
+	@echo "... model/TimeStamp.o"
+	@echo "... model/TimeStamp.i"
+	@echo "... model/TimeStamp.s"
 	@echo "... util/Parser.o"
 	@echo "... util/Parser.i"
 	@echo "... util/Parser.s"
