@@ -5,15 +5,20 @@
 #ifndef QUANTCAST_CODING_CHALLENGE_PARSER_H
 #define QUANTCAST_CODING_CHALLENGE_PARSER_H
 
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+#include "../model/Cookie.h"
 
 class Parser {
-private:
-    int argc;
-    char **argv;
 public:
-    Parser(int argc, char **argv);
+    Parser();
 
-    void print();
+    //checks command is valid
+    bool validCommand(int argc, char **argv);
+
+    //reads .csv file and returns vecto
+    std::vector<Cookie> parseFile(std::string file);
 };
 
 
