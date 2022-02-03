@@ -1,4 +1,4 @@
-# Install script for directory: /Users/kylekwon/Documents/intern/quantcast_coding_challenge
+# Install script for directory: /Users/kylekwon/Documents/intern/most_active_cookie
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

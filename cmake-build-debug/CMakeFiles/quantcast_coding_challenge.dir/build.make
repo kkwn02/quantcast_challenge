@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kylekwon/Documents/intern/quantcast_coding_challenge
+CMAKE_SOURCE_DIR = /Users/kylekwon/Documents/intern/most_active_cookie
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/quantcast_coding_challenge.dir/depend.make
@@ -79,81 +79,81 @@ include CMakeFiles/quantcast_coding_challenge.dir/flags.make
 
 CMakeFiles/quantcast_coding_challenge.dir/main.cpp.o: CMakeFiles/quantcast_coding_challenge.dir/flags.make
 CMakeFiles/quantcast_coding_challenge.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/main.cpp.o -c /Users/kylekwon/Documents/intern/quantcast_coding_challenge/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/main.cpp.o -c /Users/kylekwon/Documents/intern/most_active_cookie/main.cpp
 
 CMakeFiles/quantcast_coding_challenge.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quantcast_coding_challenge.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/quantcast_coding_challenge/main.cpp > CMakeFiles/quantcast_coding_challenge.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/most_active_cookie/main.cpp > CMakeFiles/quantcast_coding_challenge.dir/main.cpp.i
 
 CMakeFiles/quantcast_coding_challenge.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quantcast_coding_challenge.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/quantcast_coding_challenge/main.cpp -o CMakeFiles/quantcast_coding_challenge.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/most_active_cookie/main.cpp -o CMakeFiles/quantcast_coding_challenge.dir/main.cpp.s
 
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o: CMakeFiles/quantcast_coding_challenge.dir/flags.make
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o: ../util/Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o -c /Users/kylekwon/Documents/intern/quantcast_coding_challenge/util/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o -c /Users/kylekwon/Documents/intern/most_active_cookie/util/Parser.cpp
 
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/quantcast_coding_challenge/util/Parser.cpp > CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/most_active_cookie/util/Parser.cpp > CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.i
 
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/quantcast_coding_challenge/util/Parser.cpp -o CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/most_active_cookie/util/Parser.cpp -o CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.s
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o: CMakeFiles/quantcast_coding_challenge.dir/flags.make
 CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o: ../model/Cookie.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o -c /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Cookie.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o -c /Users/kylekwon/Documents/intern/most_active_cookie/model/Cookie.cpp
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Cookie.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/most_active_cookie/model/Cookie.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.i
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Cookie.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/most_active_cookie/model/Cookie.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o: CMakeFiles/quantcast_coding_challenge.dir/flags.make
 CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o: ../model/Date.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o -c /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o -c /Users/kylekwon/Documents/intern/most_active_cookie/model/Date.cpp
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Date.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/most_active_cookie/model/Date.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.i
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Date.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/most_active_cookie/model/Date.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.s
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o: CMakeFiles/quantcast_coding_challenge.dir/flags.make
 CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o: ../model/Time.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o -c /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Time.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o -c /Users/kylekwon/Documents/intern/most_active_cookie/model/Time.cpp
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Time.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/most_active_cookie/model/Time.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.i
 
 CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/Time.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/most_active_cookie/model/Time.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.s
 
 CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o: CMakeFiles/quantcast_coding_challenge.dir/flags.make
 CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o: ../model/TimeStamp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o -c /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/TimeStamp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o -c /Users/kylekwon/Documents/intern/most_active_cookie/model/TimeStamp.cpp
 
 CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/TimeStamp.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylekwon/Documents/intern/most_active_cookie/model/TimeStamp.cpp > CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.i
 
 CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/quantcast_coding_challenge/model/TimeStamp.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylekwon/Documents/intern/most_active_cookie/model/TimeStamp.cpp -o CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.s
 
 # Object files for target quantcast_coding_challenge
 quantcast_coding_challenge_OBJECTS = \
@@ -175,7 +175,7 @@ quantcast_coding_challenge: CMakeFiles/quantcast_coding_challenge.dir/model/Time
 quantcast_coding_challenge: CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o
 quantcast_coding_challenge: CMakeFiles/quantcast_coding_challenge.dir/build.make
 quantcast_coding_challenge: CMakeFiles/quantcast_coding_challenge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable quantcast_coding_challenge"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable quantcast_coding_challenge"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quantcast_coding_challenge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -188,6 +188,6 @@ CMakeFiles/quantcast_coding_challenge.dir/clean:
 .PHONY : CMakeFiles/quantcast_coding_challenge.dir/clean
 
 CMakeFiles/quantcast_coding_challenge.dir/depend:
-	cd /Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kylekwon/Documents/intern/quantcast_coding_challenge /Users/kylekwon/Documents/intern/quantcast_coding_challenge /Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug /Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug /Users/kylekwon/Documents/intern/quantcast_coding_challenge/cmake-build-debug/CMakeFiles/quantcast_coding_challenge.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kylekwon/Documents/intern/most_active_cookie /Users/kylekwon/Documents/intern/most_active_cookie /Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug /Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug /Users/kylekwon/Documents/intern/most_active_cookie/cmake-build-debug/CMakeFiles/quantcast_coding_challenge.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/quantcast_coding_challenge.dir/depend
 
