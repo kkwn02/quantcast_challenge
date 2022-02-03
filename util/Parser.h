@@ -20,6 +20,8 @@ public:
 
     //reads .csv file and returns vecto
     CookieJar parseFile(std::string file);
+
+    void processCommand(int argc, char **argv);
 };
 
 

@@ -34,3 +34,16 @@ CookieJar Parser::parseFile(std::string file) {
     }
     return cookies;
 }
+
+void Parser::processCommand(int argc, char **argv) {
+    if (!validCommand(argc, argv)) return;
+    std::string file(argv[1]);
+    CookieJar cj = parseFile(file);
+    if (std::string(argv[2]) == "-d") {
+        Date d(argv[3]);
+        std::vector<Cookie> activeCookies = cj.getMostActiveCookies(d);
+        for (Cookie c : activeCookies) {
+            std::cout << c.getToken() << std::endl;
+        }
+    }
+}
