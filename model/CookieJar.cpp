@@ -7,6 +7,9 @@
 CookieJar::CookieJar() {
 }
 
+//Uses date as key which is associated with to another map with cookie as key. That maps value is
+//number of occurences of that cookie on that date. No need to keep timeStamp since that
+// information is not needed for this function.
 void CookieJar::addCookie(Cookie &cookie) {
     Date d(cookie.getTimeStamp().getDate());
     if (cookiesDateMap.find(d) == cookiesDateMap.end()) {

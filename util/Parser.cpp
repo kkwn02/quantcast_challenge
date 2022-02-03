@@ -16,7 +16,14 @@ bool Parser::validCommand(int argc, char **argv) {
         std::cout << "Invalid file" << std::endl;
         return false;
     }
-    //make sure command is valid
+    std::string date(argv[3]);
+    if (date.length() != 10 ||
+        date.find_first_of("-") != 4 ||
+        date.find_last_of("-") != 7) {
+        std::cout << "Invalid date format" << std::endl;
+        return false;
+    }
+    //make sure command is valid. Can expand map commands in future if necessary
     if (std::string(argv[2]) != "-d") {
         std::cout << std::string(argv[2]) << " is an invalid command" << std::endl;
         return false;
@@ -35,6 +42,7 @@ CookieJar Parser::parseFile(std::string file) {
     return cookies;
 }
 
+//Process command based on input
 void Parser::processCommand(int argc, char **argv) {
     if (!validCommand(argc, argv)) return;
     std::string file(argv[1]);

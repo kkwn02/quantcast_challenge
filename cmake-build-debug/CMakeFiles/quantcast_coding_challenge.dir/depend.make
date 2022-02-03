@@ -33,6 +33,35 @@ CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o: ../model/Time.h
 CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o: ../model/TimeStamp.cpp
 CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o: ../model/TimeStamp.h
 
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../main.cpp
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../model/Cookie.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../model/CookieJar.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../model/Date.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../model/Time.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../model/TimeStamp.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../test/test.cpp
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: ../util/Parser.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-message.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-printers.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/gtest_prod.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/quantcast_coding_challenge.dir/test/test.cpp.o: _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
+
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o: ../model/Cookie.h
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o: ../model/CookieJar.h
 CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o: ../model/Date.h

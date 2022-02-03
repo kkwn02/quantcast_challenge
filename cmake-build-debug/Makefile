@@ -76,6 +76,52 @@ CMAKE_BINARY_DIR = /Users/kylekwon/Documents/intern/most_active_cookie/cmake-bui
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -131,6 +177,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named testing
+
+# Build rule for target.
+testing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testing
+.PHONY : testing
+
+# fast build rule for target.
+testing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/build
+.PHONY : testing/fast
+
+#=============================================================================
 # Target rules for targets named quantcast_coding_challenge
 
 # Build rule for target.
@@ -142,6 +201,58 @@ quantcast_coding_challenge: cmake_check_build_system
 quantcast_coding_challenge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/build
 .PHONY : quantcast_coding_challenge/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 main.o: main.cpp.o
 
@@ -176,6 +287,7 @@ model/Cookie.o: model/Cookie.cpp.o
 
 # target to build an object file
 model/Cookie.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Cookie.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.o
 .PHONY : model/Cookie.cpp.o
 
@@ -185,6 +297,7 @@ model/Cookie.i: model/Cookie.cpp.i
 
 # target to preprocess a source file
 model/Cookie.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Cookie.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.i
 .PHONY : model/Cookie.cpp.i
 
@@ -194,6 +307,7 @@ model/Cookie.s: model/Cookie.cpp.s
 
 # target to generate assembly for a file
 model/Cookie.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Cookie.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s
 .PHONY : model/Cookie.cpp.s
 
@@ -203,6 +317,7 @@ model/CookieJar.o: model/CookieJar.cpp.o
 
 # target to build an object file
 model/CookieJar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/CookieJar.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/CookieJar.cpp.o
 .PHONY : model/CookieJar.cpp.o
 
@@ -212,6 +327,7 @@ model/CookieJar.i: model/CookieJar.cpp.i
 
 # target to preprocess a source file
 model/CookieJar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/CookieJar.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/CookieJar.cpp.i
 .PHONY : model/CookieJar.cpp.i
 
@@ -221,6 +337,7 @@ model/CookieJar.s: model/CookieJar.cpp.s
 
 # target to generate assembly for a file
 model/CookieJar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/CookieJar.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/CookieJar.cpp.s
 .PHONY : model/CookieJar.cpp.s
 
@@ -230,6 +347,7 @@ model/Date.o: model/Date.cpp.o
 
 # target to build an object file
 model/Date.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Date.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.o
 .PHONY : model/Date.cpp.o
 
@@ -239,6 +357,7 @@ model/Date.i: model/Date.cpp.i
 
 # target to preprocess a source file
 model/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Date.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.i
 .PHONY : model/Date.cpp.i
 
@@ -248,6 +367,7 @@ model/Date.s: model/Date.cpp.s
 
 # target to generate assembly for a file
 model/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Date.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Date.cpp.s
 .PHONY : model/Date.cpp.s
 
@@ -257,6 +377,7 @@ model/Time.o: model/Time.cpp.o
 
 # target to build an object file
 model/Time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Time.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.o
 .PHONY : model/Time.cpp.o
 
@@ -266,6 +387,7 @@ model/Time.i: model/Time.cpp.i
 
 # target to preprocess a source file
 model/Time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Time.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.i
 .PHONY : model/Time.cpp.i
 
@@ -275,6 +397,7 @@ model/Time.s: model/Time.cpp.s
 
 # target to generate assembly for a file
 model/Time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/Time.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Time.cpp.s
 .PHONY : model/Time.cpp.s
 
@@ -284,6 +407,7 @@ model/TimeStamp.o: model/TimeStamp.cpp.o
 
 # target to build an object file
 model/TimeStamp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/TimeStamp.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.o
 .PHONY : model/TimeStamp.cpp.o
 
@@ -293,6 +417,7 @@ model/TimeStamp.i: model/TimeStamp.cpp.i
 
 # target to preprocess a source file
 model/TimeStamp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/TimeStamp.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.i
 .PHONY : model/TimeStamp.cpp.i
 
@@ -302,8 +427,63 @@ model/TimeStamp.s: model/TimeStamp.cpp.s
 
 # target to generate assembly for a file
 model/TimeStamp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/model/TimeStamp.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/TimeStamp.cpp.s
 .PHONY : model/TimeStamp.cpp.s
+
+test/main.o: test/main.cpp.o
+
+.PHONY : test/main.o
+
+# target to build an object file
+test/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/test/main.cpp.o
+.PHONY : test/main.cpp.o
+
+test/main.i: test/main.cpp.i
+
+.PHONY : test/main.i
+
+# target to preprocess a source file
+test/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/test/main.cpp.i
+.PHONY : test/main.cpp.i
+
+test/main.s: test/main.cpp.s
+
+.PHONY : test/main.s
+
+# target to generate assembly for a file
+test/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/test/main.cpp.s
+.PHONY : test/main.cpp.s
+
+test/test.o: test/test.cpp.o
+
+.PHONY : test/test.o
+
+# target to build an object file
+test/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/test/test.cpp.o
+.PHONY : test/test.cpp.o
+
+test/test.i: test/test.cpp.i
+
+.PHONY : test/test.i
+
+# target to preprocess a source file
+test/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/test/test.cpp.i
+.PHONY : test/test.cpp.i
+
+test/test.s: test/test.cpp.s
+
+.PHONY : test/test.s
+
+# target to generate assembly for a file
+test/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/test/test.cpp.s
+.PHONY : test/test.cpp.s
 
 util/Parser.o: util/Parser.cpp.o
 
@@ -311,6 +491,7 @@ util/Parser.o: util/Parser.cpp.o
 
 # target to build an object file
 util/Parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/util/Parser.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.o
 .PHONY : util/Parser.cpp.o
 
@@ -320,6 +501,7 @@ util/Parser.i: util/Parser.cpp.i
 
 # target to preprocess a source file
 util/Parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/util/Parser.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.i
 .PHONY : util/Parser.cpp.i
 
@@ -329,6 +511,7 @@ util/Parser.s: util/Parser.cpp.s
 
 # target to generate assembly for a file
 util/Parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/util/Parser.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/util/Parser.cpp.s
 .PHONY : util/Parser.cpp.s
 
@@ -339,8 +522,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... quantcast_coding_challenge"
+	@echo "... testing"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -359,6 +551,12 @@ help:
 	@echo "... model/TimeStamp.o"
 	@echo "... model/TimeStamp.i"
 	@echo "... model/TimeStamp.s"
+	@echo "... test/main.o"
+	@echo "... test/main.i"
+	@echo "... test/main.s"
+	@echo "... test/test.o"
+	@echo "... test/test.i"
+	@echo "... test/test.s"
 	@echo "... util/Parser.o"
 	@echo "... util/Parser.i"
 	@echo "... util/Parser.s"

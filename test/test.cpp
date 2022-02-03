@@ -42,6 +42,10 @@ TEST(ParserTest, ValidCommand) {
     EXPECT_EQ(p.validCommand(argc, argv), false) << "Parser did not detect invalid command";
     argv[2] = (char*)(std::string("-f").c_str());
     EXPECT_EQ(p.validCommand(argc, argv), false) << "Parser did not detect invalid command";
+    argv[3] = (char*)(std::string("2018-12-122").c_str());
+    EXPECT_EQ(p.validCommand(argc, argv), false) << "Parser did not detect invalid command";
+    argv[3] = (char*)(std::string("2018-1-112").c_str());
+    EXPECT_EQ(p.validCommand(argc, argv), false) << "Parser did not detect invalid command";
 }
 
 TEST(CookieJarTest, MostActiveCookie) {
