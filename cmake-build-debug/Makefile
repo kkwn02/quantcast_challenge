@@ -197,6 +197,33 @@ model/Cookie.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/Cookie.cpp.s
 .PHONY : model/Cookie.cpp.s
 
+model/CookieJar.o: model/CookieJar.cpp.o
+
+.PHONY : model/CookieJar.o
+
+# target to build an object file
+model/CookieJar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/CookieJar.cpp.o
+.PHONY : model/CookieJar.cpp.o
+
+model/CookieJar.i: model/CookieJar.cpp.i
+
+.PHONY : model/CookieJar.i
+
+# target to preprocess a source file
+model/CookieJar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/CookieJar.cpp.i
+.PHONY : model/CookieJar.cpp.i
+
+model/CookieJar.s: model/CookieJar.cpp.s
+
+.PHONY : model/CookieJar.s
+
+# target to generate assembly for a file
+model/CookieJar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/quantcast_coding_challenge.dir/build.make CMakeFiles/quantcast_coding_challenge.dir/model/CookieJar.cpp.s
+.PHONY : model/CookieJar.cpp.s
+
 model/Date.o: model/Date.cpp.o
 
 .PHONY : model/Date.o
@@ -320,6 +347,9 @@ help:
 	@echo "... model/Cookie.o"
 	@echo "... model/Cookie.i"
 	@echo "... model/Cookie.s"
+	@echo "... model/CookieJar.o"
+	@echo "... model/CookieJar.i"
+	@echo "... model/CookieJar.s"
 	@echo "... model/Date.o"
 	@echo "... model/Date.i"
 	@echo "... model/Date.s"

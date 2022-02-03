@@ -3,15 +3,13 @@
 #include "model/Cookie.h"
 
 int main(int argc, char **argv) {
-    if (argc != 4) {
-        std::cout << "Invalid command" << std::endl;
-    }
     Parser p;
     std::string file(argv[1]);
-    std::vector<Cookie> cookies = p.parseFile(file);
-    for (auto i = cookies.begin(); i != cookies.end(); i++) {
-        (*i).print();
+    CookieJar cj = p.parseFile(file);
+    Date d(argv[3]);
+    std::vector<Cookie> activeCookies = cj.getMostActiveCookies(d);
+    for (Cookie c : activeCookies) {
+        std::cout << c.getToken() << std::endl;
     }
-
     return 0;
 }

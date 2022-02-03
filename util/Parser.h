@@ -9,6 +9,7 @@
 #include <vector>
 #include <unordered_set>
 #include "../model/Cookie.h"
+#include "../model/CookieJar.h"
 
 class Parser {
 public:
@@ -18,7 +19,7 @@ public:
     bool validCommand(int argc, char **argv);
 
     //reads .csv file and returns vecto
-    std::vector<Cookie> parseFile(std::string file);
+    CookieJar parseFile(std::string file);
 };
 
 

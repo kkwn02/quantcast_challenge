@@ -24,13 +24,13 @@ bool Parser::validCommand(int argc, char **argv) {
     return true;
 }
 
-std::vector<Cookie> Parser::parseFile(std::string file) {
+CookieJar Parser::parseFile(std::string file) {
     std::fstream myFile(file);
     std::string s;
-    std::vector<Cookie> cookies;
+    CookieJar cookies;
     while (getline(myFile, s)) {
         Cookie c(s);
-        cookies.push_back(c);
+        cookies.addCookie(c);
     }
     return cookies;
 }

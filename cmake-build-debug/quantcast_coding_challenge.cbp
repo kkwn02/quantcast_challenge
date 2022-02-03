@@ -89,6 +89,12 @@
 		<Unit filename="/Users/kylekwon/Documents/intern/most_active_cookie/model/Cookie.h">
 			<Option target="quantcast_coding_challenge"/>
 		</Unit>
+		<Unit filename="/Users/kylekwon/Documents/intern/most_active_cookie/model/CookieJar.cpp">
+			<Option target="quantcast_coding_challenge"/>
+		</Unit>
+		<Unit filename="/Users/kylekwon/Documents/intern/most_active_cookie/model/CookieJar.h">
+			<Option target="quantcast_coding_challenge"/>
+		</Unit>
 		<Unit filename="/Users/kylekwon/Documents/intern/most_active_cookie/model/Date.cpp">
 			<Option target="quantcast_coding_challenge"/>
 		</Unit>

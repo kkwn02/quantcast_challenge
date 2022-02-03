@@ -17,8 +17,8 @@ private:
 public:
     TimeStamp(std::string timeStamp);
 
-    Date getDate();
-    Time getTime();
+    Date &getDate();
+    Time &getTime();
 
     void setTimeStamp(std::string timeStamp);
     void setTimeStamp(Date &d, Time &t);

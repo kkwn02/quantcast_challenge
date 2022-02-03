@@ -5,14 +5,14 @@
 #include "TimeStamp.h"
 
 TimeStamp::TimeStamp(std::string timeStamp): date(timeStamp.substr(0, timeStamp.find("T"))),
-    time(timeStamp.substr(timeStamp.find("T")+1)){
+                                             time(timeStamp.substr(timeStamp.find("T")+1)){
 }
 
-Date TimeStamp::getDate() {
+Date &TimeStamp::getDate() {
     return date;
 }
 
-Time TimeStamp::getTime() {
+Time &TimeStamp::getTime() {
     return time;
 }
 
